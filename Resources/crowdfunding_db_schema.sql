@@ -2,8 +2,6 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/LkKiWY
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
--- Format the datestyle for the database to Month/Day/Year
-ALTER DATABASE "Pewlett Hackard (sql-challenge)" SET datestyle TO "ISO, MDY";
 
 CREATE TABLE "category" (
     "category_id" VARCHAR(255)   NOT NULL,
@@ -35,7 +33,10 @@ CREATE TABLE "campaign" (
     "launched_date" DATE   NOT NULL,
     "end_date" DATE   NOT NULL,
     "category_id" VARCHAR(255)   NOT NULL,
-    "subcategory_id" VARCHAR(255)   NOT NULL
+    "subcategory_id" VARCHAR(255)   NOT NULL,
+    CONSTRAINT "pk_campaign" PRIMARY KEY (
+        "cf_id"
+     )
 );
 
 CREATE TABLE "contacts" (
