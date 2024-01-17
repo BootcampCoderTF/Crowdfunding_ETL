@@ -12,7 +12,7 @@ We were given the Crowfunding data set to perform the ETL (Extract, Transform an
 
 ## ERD
 
-![ERD drawing](https://github.com/BootcampCoderTF/Crowdfunding_ETL/blob/main/Data%20Analysis/images/_EDRcrowdfunding_db_schema.png)
+![ERD drawing](https://github.com/BootcampCoderTF/Crowdfunding_ETL/blob/main/crowdfunding_db_ERD.png)
 
 ## Part 1: Create the Category and Subcategory DataFrames
 First off we started by importing in the crowdfunding.xlsx file and converting it into a dataframe so we can start working with the data. Once the data was imported and converted into a dataframe we noticed that the data still needed some cleaning up to make it better to work with. We split the "category & sub-category" column into 2 different columns of "category" and "sub-category". Not only this but we split the data across as well into the 2 new columns. After this we used some list comprehension to assign new unique ID's to our all of our different categories and subcategories. We made dataframes with these new ID's into seperate dataframes and exported these as csv's.
