@@ -25,7 +25,7 @@ For the next sections firstly we imported the contacts.xlsx and converted it int
 ### Pandas
 Firstly we needed to import the json dependency. Once this was done we created a loop to iterate through the contact_info_df and convert each row to a dictionary. Once the loop was done we made a dataframe out of the list of dictionaries it gave us, picked out the items we wanted to keep, split and cleaned the appropriate rows and exported it out as a csv. 
 ### Regex
-
+Once the re dependency had been imported we created a copy of the contact info dataframe to work with. After that was done we extracted out the sections we needed one at a time checking what the data types were as we went along converting where necessary. After we had extracted all the data we needed we created a new dataframe with this information leaving behind all the things we didn't need. Finally we did some more cleaning and reorganising of the data and exported the finished dataframe as a csv  
 
 ## Part 4: Create the Crowdfunding Database
 
